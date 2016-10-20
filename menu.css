@@ -1,0 +1,148 @@
+/***************************************************
+Add your Google Fonts
+Update ALL the named colours to create a monochromatic scheme
+Style the menus - one horizontally and one vertically
+Add the hover/active effects to your menu items
+***************************************************/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: 'Open Sans', arial, sans-serif;
+}
+html, body{
+    background-color: #003873;
+}
+h1{
+    font-size: 6.854rem;
+    font-family: 'Roboto Slab', Palatino, serif; 
+    padding: 1rem 2rem;
+}
+h2{
+    font-size: 4.23rem;
+    font-family: 'Roboto Slab', Palatino, serif; 
+    padding: 1rem 2rem;
+}
+nav li{
+    font-size: 2.618rem;
+    font-family: 'Roboto Slab', Palatino, serif; 
+}
+p{
+    font-size: 1.618rem;
+    padding: 1rem 2rem;
+}
+.wrapper{
+    max-width: 1400px; 
+    width: 80%;
+    margin: 0 auto;
+    background-color: #D2EDFF;
+    color: #003873;
+}
+header{
+    border-bottom: 0.4rem solid #D2EDFF;
+    background-color: #007DFF;
+    color: aliceblue;
+}
+.menu-h{
+    width: 100%;
+}
+    .menu-h li{
+        /* style the list items to remove the bullets 
+        and line up horizontally
+        and take up 20% of the width of the ul */
+        display: block;
+        width: calc(20% - 1px);
+        float: left;
+        text-align: center;
+        text-decoration: none;
+        background-color: #43607F;
+        color: white;
+        margin: 0 1px 0 0;
+        
+    }
+    .menu-h li a{
+        color: #ffffff;
+        text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.3);
+        margin: 2;
+        display: inline-block;
+        text-decoration: none;
+        width: 100%;
+        transition: all 0.3s ease 0s;
+        
+        
+        }
+        .menu-h a,
+        .menu-h a:link,
+        .menu-h a:visited{
+            /* style the anchors to fill the entire width of the li 
+            make sure there is padding around your text */
+        }
+        .menu-h a:hover{
+            display: inline-block;
+            cursor: pointer;
+            background-color: #001F40;
+            
+            
+            
+        }
+        .menu-h a:active{
+            -webkit-transform: translateY(-8px);
+            transform: translateY(-8px);  
+            
+        }
+.menu-v{
+    width: 20%;
+    float:left;
+}
+    .menu-v li{
+        /* style the list items to remove the bullets 
+        and line up vertically
+        and take up 100% of the width of the ul */
+        
+        width: 100%;
+        list-style: none;
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+        margin: 0;
+    }
+    .menu-v li a{
+        background-color: #007DFF;
+        color:#ffffff;
+        text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.3);
+        margin: 2;
+        display: inline-block;
+        text-decoration: none;
+        width: 100%;
+        transition: all 0.3s ease 0s;
+        
+    }
+    .menu-v li:first-child{
+        margin-top: 40px;
+    
+    }
+        .menu-v a,
+        .menu-v a:link,
+        .menu-v a:visited{
+            /* style the anchors to fill the entire width of the li */
+        }
+    .menu-v a:hover{
+        display: inline-block; 
+        cursor: pointer;
+        background-color: #001F40;
+        box-shadow: inset 0 0 0 5px #43607F;
+    }
+    .menu-v a:active{
+                
+        }
+main{
+    width:80%;
+    float: right;
+}
+footer{
+    clear:both;
+}
